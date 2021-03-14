@@ -1,0 +1,65 @@
+package controller;
+
+public class Dinossauro {
+	private String nome;
+	private int energia;
+	private int velocidade;
+	private int temperatura;
+	private int humor;
+	
+	public Dinossauro(String nome){
+		this.nome = nome;
+		energia = 5;
+		humor = 5;		
+	}
+	
+	public void pular(){
+		energia--;
+		humor++;
+		System.out.println("O dinossauro " 
+				+ nome 
+				+ "está pulando.");		
+	}
+	
+	public void correr(){
+		energia--;
+		humor++;
+		System.out.println("O dinossauro " 
+							+ nome 
+							+ "está correndo.");
+	}
+	
+	public void comer(){
+		energia++;
+		humor++;
+		System.out.println("O dinossauro " 
+							+ nome 
+							+ " acaba de comer, ganhou energia e está mais feliz.");		
+	}
+	
+	public void brincar(){
+		energia--;
+		humor++;
+		System.out.println("O dinossauro " 
+				+ nome 
+				+ " está brincando, portanto está mais feliz.");		
+	}
+	
+	public void tomarSol(){
+			humor ++;		
+			velocidade ++;
+			energia--;
+			System.out.println("O dinossauro "
+								+ nome
+								+ " está um pouco mais feliz e mais veloz!");
+	}
+	
+	public void ficarNaSombra(){		
+		energia++;
+		humor--;
+		System.out.println("O dinossauro " 
+							+ nome
+							+ " está descansando na sombra.");
+	}
+
+}

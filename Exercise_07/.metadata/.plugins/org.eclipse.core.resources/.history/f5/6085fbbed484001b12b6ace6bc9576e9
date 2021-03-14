@@ -1,0 +1,29 @@
+package view;
+import java.util.Scanner;
+import controller.Dinossauro;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		Dinossauro Skeep =  new Dinossauro("Skeep");
+		
+		boolean loop = true;
+		 while(loop == true){
+			 Scanner scan = new Scanner(System.in);
+			 System.out.println(Skeep);
+			 System.out.println("Escolha uma ação para o " + Skeep.nome + " \n" 
+					 			 + "Pular \n"
+					 			 + "Correr \n"
+					 			 + "Comer \n"
+					 			 + "Brincar\n"
+					 			 + "Tomar Sol \n"
+					 			 + "Ficar na Sombra");
+			 String textoMaiusculo = scan.nextLine().toUpperCase();
+			 char letra = textoMaiusculo.charAt(0);
+			 
+		 }
+
+
+	}
+
+}
